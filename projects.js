@@ -140,7 +140,7 @@ export function setupProjectModal() {
 
 function projectCard(p) {
   var article = document.createElement("article");
-  article.className = "project card visible"; 
+  article.className = "project card"; 
   article.setAttribute("data-project-id", p.id);
 
   var media = document.createElement("div");
