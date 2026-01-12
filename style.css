@@ -518,26 +518,14 @@ h1{
 }
 
 #about {
-  position: relative !important;
-  isolation: isolate;
+  position: relative;
 }
 
 #about::before {
   content: "";
   position: absolute;
-  inset: -40px 0 -40px 0;
-  background: radial-gradient(
-      1400px 520px at 20% -10%,
-      rgba(255, 60, 60, 0.14),
-      transparent 60%
-    ),
-    linear-gradient(180deg, rgba(0,0,0,0.18), rgba(0,0,0,0.55));
-  z-index: -1;
+  inset: 0;
   pointer-events: none;
-}
+  z-index
 
-#about .card {
-  background: rgba(14, 14, 14, 0.65) !important;
-  backdrop-filter: blur(10px);
-}
 
