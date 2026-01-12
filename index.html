@@ -1,1 +1,328 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Avaneesh Sirikonda | Portfolio</title>
+  <meta name="description" content="Avaneesh Sirikonda — robotics, CAD, and software projects. Clean dark portfolio with red accent." />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <!-- FX layers -->
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow" aria-hidden="true"></div>
+  <div id="cursorGlow" class="cursor-glow" aria-hidden="true"></div>
+
+  <!-- Nav -->
+  <header class="nav">
+    <div class="shell nav-inner">
+      <a class="brand" href="#top" aria-label="Go to top">
+        <span class="brand-dot"></span>
+        <span class="brand-text">Avaneesh Sirikonda</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a class="navlink" href="#about">About</a>
+        <a class="navlink" href="#skills">Skills</a>
+        <a class="navlink" href="#experience">Experience</a>
+        <a class="navlink" href="#projects">Projects</a>
+        <a class="navlink" href="#resume">Resume</a>
+        <a class="navlink pill" href="#contact">Contact</a>
+      </nav>
+
+      <button id="menuBtn" class="menu-btn" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div id="mobileMenu" class="mobile-menu" aria-hidden="true">
+      <a class="mobileLink" href="#about">About</a>
+      <a class="mobileLink" href="#skills">Skills</a>
+      <a class="mobileLink" href="#experience">Experience</a>
+      <a class="mobileLink" href="#projects">Projects</a>
+      <a class="mobileLink" href="#resume">Resume</a>
+      <a class="mobileLink" href="#contact">Contact</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero shell">
+      <div class="hero-left">
+        <div class="kicker">
+          <span class="chip">Robotics</span>
+          <span class="chip">CAD</span>
+          <span class="chip">Web + ML</span>
+        </div>
+
+        <h1 class="reveal">Hi, I’m <span class="accent">Avaneesh</span>.</h1>
+
+        <p class="subtitle reveal" style="transition-delay: 60ms;">
+          I build practical projects across robotics, CAD, and software. I like turning ideas into working prototypes,
+          then improving them through iteration and testing.
+        </p>
+
+        <div class="hero-actions reveal" style="transition-delay: 120ms;">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn ghost" href="./assets/resume.pdf" target="_blank" rel="noopener">Open Resume</a>
+        </div>
+
+        <div class="social reveal" style="transition-delay: 180ms;">
+          <a class="social-link" href="https://github.com/Avibest" target="_blank" rel="noopener">GitHub</a>
+          <a class="social-link" href="mailto:asirikonda09@gmail.com">Email</a>
+        </div>
+
+        <div class="hero-mini reveal" style="transition-delay: 240ms;">
+          <div class="mini-pill"><span class="dot"></span> Currently building: CAD drone + Micro:bit fitness coach</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section shell">
+      <div class="section-head reveal">
+        <h2>About</h2>
+        <p class="muted">Computer Science + Engineering mindset, built through robotics and real projects.</p>
+      </div>
+
+      <div class="grid-2">
+        <div class="card reveal">
+          <h3>Overview</h3>
+          <p>
+            I’m a sophomore at the Illinois Mathematics and Science Academy (IMSA) with a strong interest in
+            Computer Science and engineering. I like problems where software and physical systems meet — where
+            you have to design, test, debug, and iterate until the system works reliably.
+          </p>
+          <p>
+            My work spans robotics, CAD, and software development. On the software side, I build interactive web projects
+            and experiment with machine learning. On the engineering side, I design mechanisms, validate designs with testing,
+            and think about real constraints like reliability, efficiency, and usability.
+          </p>
+
+          <div class="about-focus">
+            <span class="tag">CS + Engineering</span>
+            <span class="tag">Robotics Systems</span>
+            <span class="tag">Web Development</span>
+            <span class="tag">Machine Learning</span>
+          </div>
+        </div>
+
+        <div class="grid-cards">
+          <div class="card mini reveal">
+            <h4>Engineering workflow</h4>
+            <p class="muted">Define → build → test → debug → improve.</p>
+          </div>
+
+          <div class="card mini reveal" style="transition-delay: 40ms;">
+            <h4>Software mindset</h4>
+            <p class="muted">Clean architecture, readable code, and data-driven decisions.</p>
+          </div>
+
+          <div class="card mini reveal" style="transition-delay: 80ms;">
+            <h4>CS + ML interest</h4>
+            <p class="muted">Python-based ML experiments + interactive web experiences.</p>
+          </div>
+
+          <div class="card mini reveal" style="transition-delay: 120ms;">
+            <h4>Team roles</h4>
+            <p class="muted">Leadership + collaboration under deadlines and constraints.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section shell">
+      <div class="section-head reveal">
+        <h2>Skills</h2>
+        <p class="muted">Tools I use often.</p>
+      </div>
+
+      <div class="skills">
+        <div class="skill-card reveal">
+          <div class="skill-title">Languages</div>
+          <div class="skill-tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">Python</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal" style="transition-delay: 40ms;">
+          <div class="skill-title">Web</div>
+          <div class="skill-tags">
+            <span class="tag">React.js</span>
+            <span class="tag">Bootstrap</span>
+            <span class="tag">p5.js</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal" style="transition-delay: 80ms;">
+          <div class="skill-title">ML</div>
+          <div class="skill-tags">
+            <span class="tag">Teachable Machine</span>
+            <span class="tag">ml5.js</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal" style="transition-delay: 120ms;">
+          <div class="skill-title">CAD + Robotics</div>
+          <div class="skill-tags">
+            <span class="tag">Fusion 360</span>
+            <span class="tag">Onshape</span>
+            <span class="tag">VEX / FLL</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal" style="transition-delay: 160ms;">
+          <div class="skill-title">Workflow</div>
+          <div class="skill-tags">
+            <span class="tag">Git/GitHub</span>
+            <span class="tag">Iteration</span>
+            <span class="tag">Prototyping</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section shell">
+      <div class="section-head reveal">
+        <h2>Experience</h2>
+        <p class="muted">Hands-on robotics, leadership, and mentoring.</p>
+      </div>
+
+      <div class="timeline">
+        <article class="card timeline-item reveal">
+          <div class="timeline-top">
+            <h3>VEX Robotics</h3>
+            <span class="meta">Builder / Driver · Captain</span>
+          </div>
+          <p class="muted small">Team of 6 students · 5 years · Full school year · Met 2×/week</p>
+          <ul class="bullets">
+            <li>Built and iterated on robot mechanisms (drivetrain, intake, structural components) through extensive testing and refinement.</li>
+            <li>Led a 6-person team by organizing build tasks, setting timelines, and coordinating responsibilities throughout the season.</li>
+            <li>Identified mechanical issues during build sessions and improved reliability before competitions.</li>
+            <li>Drove in matches and contributed to strategy decisions using testing results and match observations.</li>
+          </ul>
+        </article>
+
+        <article class="card timeline-item reveal" style="transition-delay: 60ms;">
+          <div class="timeline-top">
+            <h3>FIRST LEGO League (FLL)</h3>
+            <span class="meta">Programmer / Builder · Innovation Project Leader</span>
+          </div>
+          <p class="muted small">Team of 8 students · 2 years · 5-month season · Met 4×/week</p>
+          <ul class="bullets">
+            <li>Programmed autonomous robot behaviors in Python, testing and refining logic to improve consistency and performance.</li>
+            <li>Rapidly iterated on both hardware and software under competition deadlines.</li>
+            <li>Led the innovation project from concept to demo, coordinating research, design, and presentation.</li>
+            <li>Integrated hardware and software into a stable robot for competition and judging.</li>
+          </ul>
+        </article>
+
+        <article class="card timeline-item reveal" style="transition-delay: 120ms;">
+          <div class="timeline-top">
+            <h3>Robotics Mentoring</h3>
+            <span class="meta">Mentor</span>
+          </div>
+          <p class="muted small">20+ students · 4 sessions</p>
+          <ul class="bullets">
+            <li>Mentored 20+ students across four sessions, teaching building fundamentals and basic programming concepts.</li>
+            <li>Helped troubleshoot mechanical and coding issues during practice, improving student confidence and robot reliability.</li>
+            <li>Guided teams through competition rules, design tradeoffs, and iterative problem-solving.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section shell">
+      <div class="section-head reveal">
+        <h2>Projects</h2>
+        <p class="muted">Click a project to view details.</p>
+      </div>
+
+      <div class="filters reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="cad">CAD</button>
+        <button class="filter-btn" data-filter="hardware">Hardware</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="ml">ML</button>
+      </div>
+
+      <div id="projectsGrid" class="projects-grid"></div>
+    </section>
+
+    <!-- Resume -->
+    <section id="resume" class="section shell">
+      <div class="section-head reveal">
+        <h2>Resume</h2>
+        <p class="muted">Embedded PDF + download link.</p>
+      </div>
+
+      <div class="card resume-card reveal">
+        <div class="resume-actions">
+          <a class="btn primary" href="./assets/resume.pdf" download>Download Resume</a>
+          <a class="btn ghost" href="./assets/resume.pdf" target="_blank" rel="noopener">Open in New Tab</a>
+        </div>
+
+        <div class="resume-embed">
+          <iframe title="Resume PDF" src="./assets/resume.pdf" loading="lazy"></iframe>
+        </div>
+
+        <p class="muted tiny">If the PDF does not show on mobile, use the download button.</p>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section shell">
+      <div class="section-head reveal">
+        <h2>Contact</h2>
+        <p class="muted">Best way to reach me is email.</p>
+      </div>
+
+      <div class="grid-2">
+        <div class="card reveal">
+          <h3>Let’s connect</h3>
+          <p class="muted">If you want to talk about a project, robotics, or collaborating on something, send a message.</p>
+
+          <div class="contact-list">
+            <div class="contact-row">
+              <span class="label">Email</span>
+              <a class="value" href="mailto:asirikonda09@gmail.com">asirikonda09@gmail.com</a>
+            </div>
+            <div class="contact-row">
+              <span class="label">GitHub</span>
+              <a class="value" href="https://github.com/Avibest" target="_blank" rel="noopener">github.com/Avibest</a>
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <a class="btn primary" href="mailto:asirikonda09@gmail.com?subject=Portfolio%20Contact">Email Me</a>
+            <a class="btn ghost" href="https://github.com/Avibest" target="_blank" rel="noopener">View GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer shell">
+      <div class="footer-inner">
+        <div class="muted tiny">© <span id="year"></span> Avaneesh Sirikonda</div>
+        <div class="footer-links">
+          <a href="#top">Top</a>
+          <a href="#projects">Projects</a>
+          <a href="./assets/resume.pdf" target="_blank" rel="noopener">Resume</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <div id="modalRoot" class="modal-root" aria-hidden="true"></div>
+
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
 
