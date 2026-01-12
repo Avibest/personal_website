@@ -487,11 +487,23 @@ h1{
   .projects-grid{ grid-template-columns: 1fr; }
   .skills{ grid-template-columns: 1fr; }
   .modal-body{ grid-template-columns: 1fr; }
-  .modal-media{ border-right: 0; border-bottom: 1px solid rgba(255,255,255,0.10); min-height: 220px; }!important
+  .modal-media{
+    border-right: 0;
+    border-bottom: 1px solid rgba(255,255,255,0.10);
+    min-height: 220px;
+  }
 }
 
-.projects-grid .project.card {
+#projectsGrid .project,
+#projectsGrid .project.card,
+#projectsGrid article.project{
+  display: block !important;
   opacity: 1 !important;
+  visibility: visible !important;
   transform: none !important;
+  pointer-events: auto !important;
+  position: relative !important;
+  z-index: 1 !important;
 }
+
 
