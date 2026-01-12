@@ -101,6 +101,15 @@ export function renderProjects() {
   shown.forEach(function (p) {
     grid.appendChild(projectCard(p));
   });
+
+  requestAnimationFrame(function () {
+    var cards = grid.querySelectorAll(".project");
+    cards.forEach(function (c) {
+      c.style.opacity = "1";
+      c.style.visibility = "visible";
+      c.style.transform = "none";
+    });
+  });
 }
 
 export function setupProjectFiltering() {
