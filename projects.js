@@ -91,7 +91,11 @@ export function renderProjects() {
   grid.innerHTML = "";
 
   var shown = PROJECTS.filter(function (p) {
-    return currentFilter === "all" ? true : p.categories.includes(currentFilter);
+    var cats = Array.isArray(p.categories) ? p.categories : [];
+    cats = cats.map(function (c) { return String(c).toLowerCase().trim(); });
+
+    if (currentFilter === "all") return true;
+    return cats.includes(String(currentFilter).toLowerCase().trim());
   });
 
   shown.forEach(function (p) {
@@ -103,11 +107,16 @@ export function setupProjectFiltering() {
   var btns = Array.prototype.slice.call(document.querySelectorAll(".filter-btn"));
   if (!btns.length) return;
 
-  btns.forEach(function (b) {
-    b.addEventListener("click", function () {
+  btns.forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      // remove active from all
       btns.forEach(function (x) { x.classList.remove("active"); });
-      b.classList.add("active");
-      currentFilter = b.dataset.filter || "all";
+      btn.classList.add("active");
+
+      // normalize filter value
+      var f = btn.getAttribute("data-filter") || "all";
+      currentFilter = String(f).toLowerCase().trim();
+
       renderProjects();
     });
   });
