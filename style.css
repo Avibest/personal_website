@@ -489,3 +489,8 @@ h1{
   .modal-body{ grid-template-columns: 1fr; }
   .modal-media{ border-right: 0; border-bottom: 1px solid rgba(255,255,255,0.10); min-height: 220px; }
 }
+
+.projects-grid .card {
+  opacity: 1 !important;
+  transform: none !important;
+}
