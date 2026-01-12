@@ -487,10 +487,11 @@ h1{
   .projects-grid{ grid-template-columns: 1fr; }
   .skills{ grid-template-columns: 1fr; }
   .modal-body{ grid-template-columns: 1fr; }
-  .modal-media{ border-right: 0; border-bottom: 1px solid rgba(255,255,255,0.10); min-height: 220px; }
+  .modal-media{ border-right: 0; border-bottom: 1px solid rgba(255,255,255,0.10); min-height: 220px; }!important
 }
 
-.projects-grid .card {
+.projects-grid .project.card {
   opacity: 1 !important;
   transform: none !important;
 }
+
