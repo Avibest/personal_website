@@ -259,31 +259,6 @@ h1{
   font-size: 0.82rem;
 }
 
-}
-#about {
-  position: relative;
-  overflow: hidden;
-}
-
-#about::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  z-index: 0;
-  background:
-    radial-gradient(1100px 520px at 15% 0%,
-      rgba(255, 70, 70, 0.18),
-      transparent 65%),
-    radial-gradient(900px 460px at 85% 35%,
-      rgba(255, 70, 70, 0.10),
-      transparent 70%);
-}
-#about > * {
-  position: relative;
-  z-index: 1;
-}
-
 /* Skills */
 .skills{
   display:grid;
@@ -513,14 +488,4 @@ h1{
   .skills{ grid-template-columns: 1fr; }
   .modal-body{ grid-template-columns: 1fr; }
   .modal-media{ border-right: 0; border-bottom: 1px solid rgba(255,255,255,0.10); min-height: 220px; }
-}
-
-#about .card {
-  background: rgba(12, 12, 12, 0.55);  
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.06);
-}
-
-#about .card.mini {
-  background: rgba(12, 12, 12, 0.50);
 }
