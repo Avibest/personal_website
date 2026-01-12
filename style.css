@@ -515,15 +515,12 @@ h1{
   .modal-media{ border-right: 0; border-bottom: 1px solid rgba(255,255,255,0.10); min-height: 220px; }
 }
 
-#about {
-  position: relative;
+#about .card {
+  background: rgba(12, 12, 12, 0.55);  
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
 }
 
-#about::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  z-index
-
-
+#about .card.mini {
+  background: rgba(12, 12, 12, 0.50);
+}
