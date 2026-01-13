@@ -64,6 +64,14 @@ export function modalTemplate(project) {
         <div class="modal-media">${media}</div>
         <div class="modal-content">
           <p>${escapeHtml(project.description)}</p>
+
+          ${project.id === "emotion" ? `
+          <p style="margin-top: 10px;">
+          <a href="https://avibest.github.io/Project-112/" target="_blank" rel="noopener noreferrer"
+          style="color: var(--accent); text-decoration: none; font-weight: 500;">View live demo →</a>
+          </p>
+` : ""}
+
           <div class="project-tags">${tags}</div>
           <ul class="modal-bullets">${bullets}</ul>
         </div>
